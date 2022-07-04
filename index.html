@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Vsetko prevzate z w3schools -->
+	<head>
+		<meta charset = "utf-8">
+		<title>Register</title>
+		<link rel = "stylesheet" href = "css/style.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul class="nav_links">
+					<li><a href="https://webte1.fei.stuba.sk/~xhrcan/SilvesterMakarone2">O mne</a> </li>
+					<li><a href="https://webte1.fei.stuba.sk/~xhrcan/SilvesterMakarone2/Zivotopis">Životopis</a> </li>
+					<li><a href="https://webte1.fei.stuba.sk/~xhrcan/SilvesterMakarone2/Moj_rozvrh">Môj Rozvrh</a> </li>
+					<li><a href="https://webte1.fei.stuba.sk/~xhrcan/SilvesterMakarone2/tbbt">The Big Bang Theory</a> </li>
+				</ul>
+			</nav>
+			<button>Contact</button>
+		</header>
+		
+		<section>
+			<!--Prevzate z https://webdesign.tutsplus.com-->	
+			<div class="form">
+				<h3>Generate Table</h3>
+				<form name="myForm">
+					<p>
+						<label>Number of rows *</label>
+						<input type="number" name="X" id="X" placeholder="1 - 9" onchange="validateNum1()">
+					</p>
+					<p>
+						<label>Number of columns *</label>
+						<input type="number" name="Y" id="Y" placeholder="1 - 9" onchange="validateNum2()">
+					</p>
+					<div id="divx"></div>
+					<div id="divy"></div>
+					<p class="full-width">
+						<input type="button" value="generate" id="genBtn" onclick="display()">
+					</p>
+					<!-- https://www.youtube.com/watch?v=iE_6pQ3RlZU&ab_channel=Codingflag-->
+					<div id="above">
+						<div class ="overlay">
+
+						</div>
+						<div class="content" id="content">
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+		<br><br><br><br><br><br><br><br>
+		<footer>
+			<address>
+				Stránku vytvoril: <abbr title="xhrcan@stuba.sk">Jan Hrćan</abbr>.<br> 
+				Adresa: Hviezdoslavová 25 <br>
+				Mesto: Padina <br>
+				Štát: Srbsko <br>
+			</address>
+		</footer>
+		<script src="js/script.js"></script>
+	</body>
+</html>

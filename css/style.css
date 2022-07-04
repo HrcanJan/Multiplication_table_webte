@@ -1,0 +1,207 @@
+body{
+	background-color: aqua;
+	color: black;
+	font-size: 24px;
+	height: 100%;
+	background-image: url("../img/ppsummer.jpg"); 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1{
+	color: black;
+	text-align: center;
+}
+
+th{
+	color: black;
+	background: white;
+	text-align: center;
+}
+
+td{
+	color: black;
+	background: #FFFFB2;
+	text-align: center;
+}
+
+table, th, td {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+img{
+    float: left;
+    margin: 10px 12px 4px; 
+}
+
+a, button {
+	font-weight: 500;
+	font-size: 25px;
+	color: white;
+	text-decoration: none;
+}
+
+header {
+	background-color: #191970;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+}
+
+footer {
+	background-color: #191970;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 10%;
+	color: white;
+	margin-bottom: 0px;
+}
+
+.nav_links li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.nav_links li a:hover {
+	color: aqua;
+}
+
+button {
+	padding: 9px 25px;
+	background-color: rgba(0, 136, 169, 1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+button:hover {
+	background-color: rgba(0, 136, 169, 0.8);
+}
+
+section {
+    padding: 15px;
+    margin: 15px;
+}
+
+* {
+	box-sizing: border-box;
+}
+  
+input, textarea {
+	padding: 5px;
+	width: 100%;
+	border: 1px solid #000;
+}
+  
+.wrapper {
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+  
+.wrapper > * {
+	padding: 1em;
+}
+  
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+h3{
+	background-color: rgb(14, 0, 209);
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin: 0;
+}
+  
+form {
+	background: cyan;
+	border: 2px solid #000;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	padding: 20px;
+}
+
+form label {
+	display: block;
+}
+
+form p {
+	margin: 0;
+}
+  
+.full-width {
+	grid-column: 1 / 3;
+}
+
+@media (min-width: 570px){
+    .content{
+        width: 540px;
+    }
+}
+     
+@media (min-width: 780px){
+    .content{
+        width: 720px;
+    }
+    .row{
+        grid: auto / 2fr 2fr;
+    }
+}
+@media (min-width: 1000px){
+    .content{
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px){
+    .content{
+        width: 1140px;
+    }
+}
+
+
+#above .overlay{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 1;
+	display: none;
+}
+
+#above .content{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -20%) scale(0);
+	background: aquamarine;
+	text-align: center;
+	box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 20px;
+	z-index: 2;
+}
+
+#above.active .overlay{
+	display: block;
+}
+
+#above.active .content{
+	transition: all 300ms ease-in-out;
+	transform: translate(-50%, -20%) scale(1);
+}
